@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>محافظات الكويت والمناطق التابعة لها</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+    <body>
+        <!-- <h1>محافظات الكويت</h1>
+        <div class="container">
+            <button class="province" onclick="showAreas('العاصمة')">العاصمة</button>
+            <button class="province" onclick="showAreas('حولي')">حولي</button>
+            <button class="province" onclick="showAreas('الفروانية')">الفروانية</button>
+            <button class="province" onclick="showAreas('الأحمدي')">الأحمدي</button>
+            <button class="province" onclick="showAreas('مبارك الكبير')">مبارك الكبير</button>
+            <button class="province" onclick="showAreas('الجهراء')">الجهراء</button>
+        </div> -->
+    <!-- --------------------------تجربه السايد بار ------------------------------------  -->
+
+    <div class="toggle-btn" onclick="toggleSidebar()">قائمة المحافظات</div>
+    <div class="sidebar">
+        <h2>محافظات الكويت</h2>
+        <input type="text" id="searchBar" placeholder="Show Areas On Map..">
+        <ul id="governoratesList"></ul>
+    </div>
+    <!-- --------------------------تجربه السايد بار ------------------------------------  -->
+    <P>البرنامج فكره قد تكون كامله او ناقصة اتقبل النقد والمساعده في تحسينه حتي يعود علينا بالنفع</P>
+    <P>نسخه الهاتف فقط للاطلاع علي البرنامج  وتجربتة وإبداء الرأي فيه وليس للاستخدام اثناء الشيفت</P>
+    <P>تم عمل  قاعده بيانات محافظتين فقط وهما العاصمة و الفروانية وذلك علي سبيل التجربه </P>
+    <div id="areas" class="areas-container"></div>
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search for the area" autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="resulte-box">
+               
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>

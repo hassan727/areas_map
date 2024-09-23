@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    /* text-align: center; */
+}
+body{
+    background: #1A2130;
+    color: #000;
+}
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin: 100px auto 0 ;
+    border-radius: 8px;
+    color: #000;
+}
+.row{
+    display:flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 22px;
+    color: black;
+    
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+}
+button .fa-solid{
+    width: 30px;
+    color: #1A2130;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+::placeholder{
+    color:#1A2130;
+}
+
+.resulte-box ul{
+ border-top: 1px solid black;
+ padding: 15px 10px; 
+ font-size: 22;
+font-weight: 500;
+
+}
+
+.resulte-box ul li{
+    list-style:none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 22;
+    font-weight: 500;
+
+}
+.resulte-box ul li:hover{
+        background: #c3d9db;
+        
+}
+.resulte-box{
+    max-height: 700px;
+    overflow-y: scroll;
+    
+}
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+} */
+
+h1 {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.province {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.province:hover {
+    background-color: #6a9e6d;
+}
+
+.areas-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.area {
+    /* background-color: #f1f1f1; */
+    background-color: #1A2130;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* -------------------- تجربه السايد بار ---------------------------- */
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: fixed;
+    overflow-y:scroll;
+    transition: all 0.3s ease;
+    border-radius: 8PX;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    
+}
+P{
+    color: #fff;
+    text-align: center;
+    margin-top: 50PX;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #d1d1d1;
+}
+
+.sub-menu {
+    display: none;
+    margin-left: 20px;
+    list-style-type: circle;
+    overflow: hidden;
+    /* max-height: 0; */
+    transition: max-height 0.3s ease-out;
+}
+
+.show {
+    display: block;
+    /* max-height: 900px; */
+    transition: max-height 0.3s ease-in;
+}
+
+.toggle-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar ul {
+        display: none;
+    }
+
+    .sidebar.active ul {
+        display: block;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
+/* -------------------- تجربه السايد بار ---------------------------- */
